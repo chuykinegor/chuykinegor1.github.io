@@ -127,7 +127,7 @@ function startRecording() {
     console.error('Exception while creating MediaRecorder:', e);
     errorMsgElement.innerHTML = `Exception while creating MediaRecorder: ${JSON.stringify(e)}`;
     return;
-  }
+    }
 
   console.log('Created MediaRecorder', mediaRecorder, 'with options', options);
   recordButton.textContent = 'Stop Recording';
