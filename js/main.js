@@ -48,7 +48,7 @@ recordButton.addEventListener('click', () => {
     startRecording();
     document.getElementById('gum').style.display = 'none';
 	document.getElementById('videoCanvas').style.display = 'none';
-    wrap();
+    //wrap();
   } else {
     stopRecording();
     stop();
@@ -167,8 +167,8 @@ async function init(constraints) {
 
 var flag = true;
 //var smileState = 0
-function wrap() {
-   setInterval(chBackcolor,2000);
+//function wrap() {
+  // setInterval(chBackcolor,2000);
    //return innerIntervalId;
    }
 function chBackcolor(color) {
