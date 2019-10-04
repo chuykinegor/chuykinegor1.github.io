@@ -48,7 +48,7 @@ recordButton.addEventListener('click', () => {
     startRecording();
     document.getElementById('gum').style.display = 'none';
 	document.getElementById('videoCanvas').style.display = 'none';
-    //wrap();
+    wrap();
   } else {
     stopRecording();
     stop();
@@ -127,7 +127,7 @@ function startRecording() {
     console.error('Exception while creating MediaRecorder:', e);
     errorMsgElement.innerHTML = `Exception while creating MediaRecorder: ${JSON.stringify(e)}`;
     return;
-    }
+  }
 
   console.log('Created MediaRecorder', mediaRecorder, 'with options', options);
   recordButton.textContent = 'Stop Recording';
@@ -167,9 +167,9 @@ async function init(constraints) {
 
 var flag = true;
 //var smileState = 0
-//function wrap() {
-  // setInterval(chBackcolor,2000);
-   //return innerIntervalId;
+function wrap() {
+   //setInterval(chBackcolor,2000);
+   return innerIntervalId;
    }
 function chBackcolor(color) {
 //   if (flag == true && smileState == 0) {
