@@ -166,21 +166,21 @@ async function init(constraints) {
 }
 
 var flag = true;
-var smileState = 0
+//var smileState = 0
 function wrap() {
    setInterval(chBackcolor,2000);
-   return innerIntervalId;
+   //return innerIntervalId;
    }
 function chBackcolor(color) {
-   if (flag == true && smileState == 0) {
-      document.body.style.background = 'white';
-     smileState = 1;
-   }
-   else if (flag == true && smileState == 1){
-      document.body.style.background = 'darkolivegreen';
-	  smileState = 2;
-   }
-   else if (flag == true && smileState == 2){
+//   if (flag == true && smileState == 0) {
+//      document.body.style.background = 'white';
+//      smileState = 1;
+//   }
+//   else if (flag == true && smileState == 1){
+//      document.body.style.background = 'darkolivegreen';
+//	  smileState = 2;
+//   }
+//   else if (flag == true && smileState == 2){
    if (flag == true) {
    document.body.style.background = 'black';
    document.querySelector('p#text_two').style.color = 'white';
